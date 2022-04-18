@@ -3,8 +3,9 @@ package com.example.users.crud.shared.dto;
 import java.io.Serializable;
 
 public class UserDto implements Serializable {
-    private static final long serialVersionUID = 1L;
-    private long id;
+
+    private static final long serialVersionUID = -1289412815158172472L;
+	private long id;
     private String userId;
     private String firstName;
     private String lastName;
@@ -13,7 +14,7 @@ public class UserDto implements Serializable {
     private String password;
     private String encryptedPassword;
     private String emailVerificationToken;
-    private Boolean emailVerificationStatus;
+    private Boolean emailVerificationStatus = false;
 
     public long getId() {
         return id;
